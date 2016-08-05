@@ -6,25 +6,47 @@
  <meta charset="utf-8" />
  <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
  <meta name="viewport" content="width=device-width, initial-scale=1" />
+ <link href="https://fonts.googleapis.com/css?family=Rock+Salt" rel="stylesheet">
+
 <!--====================test reaction game=================-->
  <style>
 
  body {
- font-family:Verdana, Geneva, sans-serif;
-
+   font-family:'Rock Salt', Geneva, sans-serif;
  }
 
- 	 	 #box {
- 	 	 	 width:200px;
- 	 	 	 height:200px;
- 	 	 	 background-color:red;
- 	 	 	 display:none;
- 	 	 	 position:relative;
- 	 	 }
+ h1 {
+   margin-bottom: 0px;
+ }
 
- 	 	 .bold {
- 	 	 	 font-weight:bold;
- 	 	 }
+ p {
+   margin-top: 0px;
+ }
+
+ #box {
+  width:200px;
+  height:200px;
+  background-color:red;
+  display:none;
+ 	position:relative;
+}
+
+.bold {
+  font-weight:bold;
+}
+
+.container {
+  text-align: center;
+  border: 50px solid red;
+  display: block;
+  position:absolute;
+  height:auto;
+  bottom:0;
+  top:0;
+  left:0;
+  right:0;
+  background-color: #fff;
+}
 
  </style>
 
@@ -32,18 +54,13 @@
  </head>
 
  <body>
-
- <h1>Test your reactions!</h1>
-
- <p>Click on the boxes and circles as quickly as you can!</p>
-
- <p class="bold">Your time: <span id="time">0</span>s</p>
-
- <div id="box"></div>
-
-
- <script type="text/javascript" src="scripts.js"></script>
-
+  <div class="container">
+     <h1>Test your reactions!</h1>
+     <p>Click on the boxes and circles as quickly as you can!</p>
+     <p class="bold">Your time: <span id="time">0</span>s</p>
+     <div id="box"></div>
+     <script type="text/javascript" src="scripts.js"></script>
+   </div>
  </body>
 </html>
 <script>
